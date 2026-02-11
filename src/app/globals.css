@@ -20,7 +20,8 @@
   --color-card: var(--card);
   --color-border: var(--border);
   --color-dark-section: var(--dark-section);
-  --font-sans: "Josefin Sans Variable", system-ui, sans-serif;
+  --font-sans: "Source Sans 3 Variable", system-ui, sans-serif;
+  --font-heading: "Josefin Sans Variable", system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -31,6 +32,10 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: "Source Sans 3 Variable", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans Variable", system-ui, sans-serif;
 }
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@fontsource-variable/josefin-sans";
+import "@fontsource-variable/source-sans-3";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
