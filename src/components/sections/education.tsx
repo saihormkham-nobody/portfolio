@@ -5,7 +5,7 @@ import { education } from "@/lib/data";
 
 export function Education() {
   return (
-    <Section id="education">
+    <Section id="education" dark>
       <SectionHeading>Education</SectionHeading>
 
       <div className="mt-10 space-y-8">

@@ -6,7 +6,7 @@ import { SITE } from "@/lib/constants";
 
 export function Contact() {
   return (
-    <Section id="contact" dark>
+    <Section id="contact">
       <SectionHeading>Get in Touch</SectionHeading>
 
       <div className="mt-10 grid gap-10 md:grid-cols-2">

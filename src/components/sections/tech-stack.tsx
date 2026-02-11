@@ -5,7 +5,7 @@ import { techStack } from "@/lib/data";
 
 export function TechStack() {
   return (
-    <Section id="tech-stack">
+    <Section id="tech-stack" dark>
       <SectionHeading>Tech Stack</SectionHeading>
 
       <div className="mt-10 space-y-8">

@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 
 export function Projects() {
   return (
-    <Section id="projects" dark>
+    <Section id="projects">
       <SectionHeading>Projects</SectionHeading>
 
       <div className="mt-10 flex flex-col items-center justify-center rounded-xl border border-dashed border-border py-16 text-center">
