@@ -53,8 +53,6 @@ export const techStack: TechCategory[] = [
       { name: "React", icon: "/icons/react.svg" },
       { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
-      { name: "AG-Grid", icon: "/icons/aggrid.svg" },
-      { name: "shadcn/ui", icon: "/icons/shadcn.svg" },
     ],
   },
   {
@@ -63,6 +61,7 @@ export const techStack: TechCategory[] = [
       { name: "Laravel", icon: "/icons/laravel.svg" },
       { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
       { name: "MySQL", icon: "/icons/mysql.svg" },
+      { name: "SQLite", icon: "/icons/sqlite.svg" },
       { name: "Redis", icon: "/icons/redis.svg" },
     ],
   },
@@ -72,6 +71,7 @@ export const techStack: TechCategory[] = [
       { name: "Docker", icon: "/icons/docker.svg" },
       { name: "GitHub Actions", icon: "/icons/github-actions.svg" },
       { name: "Azure", icon: "/icons/azure.svg" },
+      { name: "AWS", icon: "/icons/aws.svg" },
       { name: "Nginx", icon: "/icons/nginx.svg" },
     ],
   },
@@ -80,7 +80,6 @@ export const techStack: TechCategory[] = [
     items: [
       { name: "Playwright", icon: "/icons/playwright.svg" },
       { name: "Git", icon: "/icons/git.svg" },
-      { name: "pnpm", icon: "/icons/pnpm.svg" },
       { name: "Figma", icon: "/icons/figma.svg" },
     ],
   },
