@@ -17,22 +17,20 @@ export function About() {
 
           <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground md:text-lg">
             <p>
-              I am a Full-Stack Developer at One Terrace in Japan, where I lead
-              an internal team building an enterprise compliance management SaaS
-              platform. As the team&apos;s #1 contributor, I work across the
-              full stack with Next.js, TypeScript, Laravel, and MySQL.
+              I am a Full-Stack Developer at One Terrace in Japan, where I lead an internal team
+              building an enterprise compliance management SaaS platform. As the team&apos;s #1
+              contributor, I work across the full stack with Next.js, TypeScript, Laravel, and
+              MySQL.
             </p>
             <p>
-              I&apos;m currently exploring Go and backend systems architecture,
-              and I&apos;m drawn to roles that involve complex technical
-              challenges — whether that&apos;s scaling infrastructure, building
-              developer tooling, or working on greenfield products.
+              I&apos;m currently exploring Go and backend systems architecture, and I&apos;m drawn
+              to roles that involve complex technical challenges — whether that&apos;s scaling
+              infrastructure, building developer tooling, or working on greenfield products.
             </p>
             <p>
-              I am particularly focused on building reliable, maintainable
-              systems at scale. My work involves AI integration, complex data
-              grid interfaces, CI/CD pipeline design, and internationalized
-              applications serving users in Japanese and English.
+              I am particularly focused on building reliable, maintainable systems at scale. My work
+              involves AI integration, complex data grid interfaces, CI/CD pipeline design, and
+              internationalized applications serving users in Japanese and English.
             </p>
           </div>
         </div>

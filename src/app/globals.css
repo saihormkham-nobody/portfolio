@@ -35,7 +35,8 @@ body {
   font-family: "Source Sans 3 Variable", system-ui, sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Josefin Sans Variable", system-ui, sans-serif;
 }
 
@@ -43,7 +44,9 @@ h1, h2 {
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .reveal.visible {

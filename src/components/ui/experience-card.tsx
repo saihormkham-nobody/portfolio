@@ -17,9 +17,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         </span>
       </div>
 
-      <h3 className="text-lg font-semibold text-foreground">
-        {experience.role}
-      </h3>
+      <h3 className="text-lg font-semibold text-foreground">{experience.role}</h3>
       <p className="text-primary">{experience.company}</p>
 
       <ul className="mt-3 space-y-2">

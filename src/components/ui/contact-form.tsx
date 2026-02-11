@@ -34,12 +34,8 @@ export function ContactForm() {
   if (status === "sent") {
     return (
       <div className="rounded-xl border border-accent/30 bg-accent/5 p-8 text-center">
-        <p className="text-lg font-medium text-accent">
-          Message sent. Thank you!
-        </p>
-        <p className="mt-2 text-sm text-muted">
-          I&apos;ll get back to you soon.
-        </p>
+        <p className="text-lg font-medium text-accent">Message sent. Thank you!</p>
+        <p className="mt-2 text-sm text-muted">I&apos;ll get back to you soon.</p>
       </div>
     );
   }

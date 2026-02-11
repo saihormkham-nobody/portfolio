@@ -12,10 +12,8 @@ interface ButtonProps extends ComponentProps<"button"> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary:
-    "bg-primary text-background font-semibold hover:brightness-110",
-  secondary:
-    "bg-card text-foreground hover:bg-border",
+  primary: "bg-primary text-background font-semibold hover:brightness-110",
+  secondary: "bg-card text-foreground hover:bg-border",
   ghost:
     "bg-transparent border border-foreground/30 text-foreground font-semibold hover:border-primary hover:text-primary",
 };

@@ -11,7 +11,10 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 md:px-8">
-        <a href="#" className="text-lg font-bold tracking-widest font-heading text-primary uppercase">
+        <a
+          href="#"
+          className="text-lg font-bold tracking-widest font-heading text-primary uppercase"
+        >
           {SITE.name}
         </a>
 

@@ -13,15 +13,7 @@ export const metadata: Metadata = {
   title: "Sai Horm Kham | Full-Stack Developer",
   description:
     "Full-Stack Developer based in Japan. Building web applications that scale — from frontend to infrastructure.",
-  keywords: [
-    "Full-Stack Developer",
-    "Next.js",
-    "TypeScript",
-    "Laravel",
-    "Go",
-    "Japan",
-    "React",
-  ],
+  keywords: ["Full-Stack Developer", "Next.js", "TypeScript", "Laravel", "Go", "Japan", "React"],
   authors: [{ name: "Sai Horm Kham" }],
   openGraph: {
     title: "Sai Horm Kham | Full-Stack Developer",
@@ -50,9 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }

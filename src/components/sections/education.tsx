@@ -10,33 +10,20 @@ export function Education() {
 
       <div className="mt-10 space-y-8">
         {education.map((edu) => (
-          <div
-            key={edu.institution}
-            className=""
-          >
+          <div key={edu.institution} className="">
             <div className="flex items-start gap-4">
               <GraduationCap size={24} className="mt-1 shrink-0 text-primary" />
               <div>
-                <h3 className="text-lg font-semibold text-foreground">
-                  {edu.degree}
-                </h3>
+                <h3 className="text-lg font-semibold text-foreground">{edu.degree}</h3>
                 <p className="text-primary">{edu.institution}</p>
                 <p className="mt-1 text-sm text-muted">{edu.period}</p>
-                {edu.status && (
-                  <p className="mt-1 text-sm text-muted">{edu.status}</p>
-                )}
+                {edu.status && <p className="mt-1 text-sm text-muted">{edu.status}</p>}
 
                 {edu.achievements && edu.achievements.length > 0 && (
                   <ul className="mt-4 space-y-2">
                     {edu.achievements.map((achievement) => (
-                      <li
-                        key={achievement}
-                        className="flex items-start gap-2 text-foreground"
-                      >
-                        <Trophy
-                          size={14}
-                          className="mt-1 shrink-0 text-accent"
-                        />
+                      <li key={achievement} className="flex items-start gap-2 text-foreground">
+                        <Trophy size={14} className="mt-1 shrink-0 text-accent" />
                         <span className="text-sm">{achievement}</span>
                       </li>
                     ))}
