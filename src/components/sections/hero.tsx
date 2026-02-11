@@ -13,8 +13,8 @@ export function Hero() {
           {SITE.title}
         </p>
         <p className="animate-fade-in-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-foreground">
-          Building enterprise web applications with modern technologies.
-          Currently based in Japan.
+          Building web applications that scale — from frontend to
+          infrastructure.
         </p>
         <div className="animate-fade-in-delay-3 mt-10 flex flex-wrap gap-4">
           <Button href="#contact" variant="ghost" size="lg">

@@ -21,11 +21,10 @@ export function About() {
           Laravel and PostgreSQL on the backend.
         </p>
         <p>
-          I began my software development journey in 2017 with mobile
-          development, expanding into web technologies after 2020. My experience
-          spans from startup environments to enterprise SaaS, working with
-          technologies including React, Next.js, Laravel, Docker, and Azure
-          cloud services.
+          I&apos;m currently exploring Go and backend systems architecture, and
+          I&apos;m drawn to roles that involve complex technical challenges —
+          whether that&apos;s scaling infrastructure, building developer tooling,
+          or working on greenfield products.
         </p>
         <p>
           I am particularly focused on building reliable, maintainable systems

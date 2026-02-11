@@ -10,32 +10,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sai Horm Kham | Software Engineer",
+  title: "Sai Horm Kham | Full-Stack Developer",
   description:
-    "Lead Full-Stack Developer based in Japan. Building enterprise SaaS applications with Next.js, TypeScript, Laravel, and AI integration.",
+    "Full-Stack Developer based in Japan. Building web applications that scale — from frontend to infrastructure.",
   keywords: [
-    "Software Engineer",
     "Full-Stack Developer",
     "Next.js",
     "TypeScript",
     "Laravel",
+    "Go",
     "Japan",
     "React",
   ],
   authors: [{ name: "Sai Horm Kham" }],
   openGraph: {
-    title: "Sai Horm Kham | Software Engineer",
+    title: "Sai Horm Kham | Full-Stack Developer",
     description:
-      "Lead Full-Stack Developer based in Japan. Building enterprise SaaS applications.",
+      "Full-Stack Developer based in Japan. Building web applications that scale — from frontend to infrastructure.",
     siteName: "Sai Horm Kham",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sai Horm Kham | Software Engineer",
+    title: "Sai Horm Kham | Full-Stack Developer",
     description:
-      "Lead Full-Stack Developer based in Japan. Building enterprise SaaS applications.",
+      "Full-Stack Developer based in Japan. Building web applications that scale — from frontend to infrastructure.",
   },
   robots: {
     index: true,

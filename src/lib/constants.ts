@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Sai Horm Kham",
-  title: "Software Engineer",
+  title: "Full-Stack Developer",
   email: "saihormkham@proton.me",
-  github: "https://github.com/saihormkham",
-  linkedin: "https://linkedin.com/in/saihormkham",
+  github: "https://github.com/saihormkham-nobody",
+  linkedin: "https://www.linkedin.com/in/sai-horm-kham/",
   formEndpoint: "", // Cloudflare Worker URL — to be configured
 } as const;
 
