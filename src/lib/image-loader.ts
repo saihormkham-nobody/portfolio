@@ -7,7 +7,7 @@ interface ImageLoaderParams {
 }
 
 const GENERATED_WIDTHS: Record<string, number[]> = {
-  "/profile-enchance": [280, 560, 640],
+  "/assets/profile-enchance": [16, 32, 48, 64, 96, 128, 256, 384, 640],
 };
 
 export default function imageLoader({ src, width }: ImageLoaderParams): string {

@@ -37,14 +37,14 @@ export function About() {
           </div>
         </div>
 
-        <div className="mx-auto w-full max-w-[280px] md:mx-0 md:max-w-none">
+        <div className="mx-auto w-full max-w-[480px] md:mx-0 md:max-w-none">
           <Image
-            src="/profile-enchance.webp"
+            src="/assets/profile-enchance.png"
             alt="Sai Horm Kham"
             width={640}
             height={800}
             sizes="(min-width: 1024px) 320px, 280px"
-            className="w-full rounded-2xl object-cover grayscale transition-all duration-700 hover:grayscale-0"
+            className="w-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
             priority
           />
         </div>
