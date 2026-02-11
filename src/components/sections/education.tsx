@@ -31,7 +31,7 @@ export function Education() {
                     {edu.achievements.map((achievement) => (
                       <li
                         key={achievement}
-                        className="flex items-start gap-2 text-muted"
+                        className="flex items-start gap-2 text-foreground"
                       >
                         <Trophy
                           size={14}

@@ -11,7 +11,7 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 md:px-8">
-        <a href="#" className="text-sm font-bold tracking-widest text-primary uppercase">
+        <a href="#" className="text-lg font-bold tracking-widest font-heading text-primary uppercase">
           {SITE.name}
         </a>
 
@@ -21,7 +21,7 @@ export function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-muted transition-colors hover:text-foreground"
+                className="text-base text-muted transition-colors hover:text-foreground"
               >
                 {link.label}
               </a>
@@ -52,7 +52,7 @@ export function Header() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="block rounded-lg px-4 py-2 text-muted transition-colors hover:bg-card hover:text-foreground"
+                className="block rounded-lg px-4 py-2 text-base font-bold text-muted transition-colors hover:bg-card hover:text-foreground"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

@@ -15,7 +15,7 @@ export function Contact() {
 
         {/* Info */}
         <div className="space-y-6">
-          <p className="text-muted leading-relaxed">
+          <p className="text-foreground leading-relaxed">
             Interested in working together? Feel free to reach out through the
             form or contact me directly.
           </p>

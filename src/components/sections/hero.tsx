@@ -12,7 +12,7 @@ export function Hero() {
         <p className="animate-fade-in-delay-1 mt-2 text-xl text-primary/80 md:text-2xl">
           {SITE.title}
         </p>
-        <p className="animate-fade-in-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-muted">
+        <p className="animate-fade-in-delay-2 mt-6 max-w-xl text-lg leading-relaxed text-foreground">
           Building enterprise web applications with modern technologies.
           Currently based in Japan.
         </p>
