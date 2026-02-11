@@ -3,7 +3,7 @@ import type { Education, Experience, TechCategory } from "./types";
 export const experiences: Experience[] = [
   {
     company: "One Terrace",
-    role: "Lead Full-Stack Developer",
+    role: "Full-Stack Developer",
     period: "Apr 2023 – Present",
     description: [
       "Lead an internal development team building a multi-tenant compliance management SaaS platform, serving as the team's #1 contributor",
@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Digital Laboratory Myanmar",
-    role: "Junior Developer / Backend Lead",
+    role: "Web Developer",
     period: "Apr 2022 – Feb 2023",
     description: [
       "Developed and maintained high-performance, SEO-optimized microsites for client businesses",
@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Bliss Stock",
-    role: "Software Developer",
+    role: "Web Developer",
     period: "Jul 2021 – Feb 2022",
     description: [
       "Built an e-learning platform using Java Spring Boot with Docker-based deployment",
@@ -37,19 +37,10 @@ export const experiences: Experience[] = [
 
 export const techStack: TechCategory[] = [
   {
-    category: "Languages",
-    items: [
-      { name: "TypeScript", icon: "/icons/typescript.svg" },
-      { name: "PHP", icon: "/icons/php.svg" },
-      { name: "Go", icon: "/icons/go.svg" },
-      { name: "Python", icon: "/icons/python.svg" },
-      { name: "Dart", icon: "/icons/dart.svg" },
-      { name: "SQL", icon: "/icons/sql.svg" },
-    ],
-  },
-  {
     category: "Frontend",
     items: [
+      { name: "TypeScript", icon: "/icons/typescript.svg" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
       { name: "React", icon: "/icons/react.svg" },
       { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
@@ -58,6 +49,8 @@ export const techStack: TechCategory[] = [
   {
     category: "Backend",
     items: [
+      { name: "PHP", icon: "/icons/php.svg" },
+      { name: "Go", icon: "/icons/go.svg" },
       { name: "Laravel", icon: "/icons/laravel.svg" },
       { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
       { name: "MySQL", icon: "/icons/mysql.svg" },
