@@ -2,15 +2,15 @@ import type { Education, Experience, TechCategory } from "./types";
 
 export const experiences: Experience[] = [
   {
-    company: "One Terrace (X-Regulation Inc.)",
+    company: "One Terrace",
     role: "Lead Full-Stack Developer",
     period: "Apr 2023 – Present",
     description: [
-      "Lead development of a multi-tenant compliance management SaaS platform as the #1 contributor across a 10+ person team",
+      "Lead an internal development team building a multi-tenant compliance management SaaS platform, serving as the team's #1 contributor",
       "Architect the Next.js frontend with TypeScript, implementing type-safe API contracts, Jotai state management, and React Query for server-state caching",
       "Integrate Azure OpenAI services for AI-powered compliance evaluation and automated finding generation",
       "Design and maintain CI/CD pipelines with GitHub Actions, Playwright E2E testing, and Docker-based deployments",
-      "Implement internationalization supporting Japanese, English, and Chinese",
+      "Implement internationalization supporting Japanese and English",
     ],
   },
   {
