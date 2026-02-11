@@ -14,6 +14,7 @@ export function TechCard({ item }: TechCardProps) {
         width={24}
         height={24}
         className="h-6 w-6"
+        unoptimized
       />
       <span className="text-sm font-medium text-foreground">{item.name}</span>
     </div>
