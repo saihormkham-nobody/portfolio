@@ -14,8 +14,8 @@ export function About() {
 
       <div className="mt-8 max-w-3xl space-y-4 text-base leading-relaxed text-foreground md:text-lg">
         <p>
-          I am a Lead Full-Stack Developer at One Terrace in Japan, where I lead
-          an internal team building an enterprise compliance management SaaS
+          I am a Full-Stack Developer at One Terrace in Japan, where I lead an
+          internal team building an enterprise compliance management SaaS
           platform. As the team's #1 contributor, I architect and build features
           across the full stack — from Next.js and TypeScript on the frontend to
           Laravel and PostgreSQL on the backend.

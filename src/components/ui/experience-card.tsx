@@ -6,21 +6,21 @@ interface ExperienceCardProps {
 
 export function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <div className="relative border-l-2 border-border pl-6 pb-10 last:pb-0">
+    <div className="relative pb-10 pl-6 last:pb-0">
       {/* Timeline dot */}
       <div className="absolute -left-[7px] top-1 h-3 w-3 rounded-full border-2 border-primary bg-background" />
 
-      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-        <div>
-          <h3 className="text-lg font-semibold text-foreground">
-            {experience.role}
-          </h3>
-          <p className="text-primary">{experience.company}</p>
-        </div>
-        <p className="text-sm text-muted whitespace-nowrap">
+      {/* Date badge — inline on mobile, absolute left on desktop */}
+      <div className="mb-2 md:absolute md:-left-[220px] md:mb-0 md:w-[180px] md:pt-0 md:text-right">
+        <span className="text-sm text-muted md:inline-block md:rounded-full md:bg-primary/10 md:px-3 md:py-1 md:text-xs md:font-medium md:text-primary">
           {experience.period}
-        </p>
+        </span>
       </div>
+
+      <h3 className="text-lg font-semibold text-foreground">
+        {experience.role}
+      </h3>
+      <p className="text-primary">{experience.company}</p>
 
       <ul className="mt-3 space-y-2">
         {experience.description.map((item) => (
