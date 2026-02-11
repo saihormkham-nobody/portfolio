@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   output: "export",
   reactCompiler: true,
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./src/lib/image-loader.ts",
   },
 };
 

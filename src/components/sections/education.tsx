@@ -12,7 +12,7 @@ export function Education() {
         {education.map((edu) => (
           <div
             key={edu.institution}
-            className="rounded-xl border border-border bg-card/50 p-6"
+            className=""
           >
             <div className="flex items-start gap-4">
               <GraduationCap size={24} className="mt-1 shrink-0 text-primary" />
