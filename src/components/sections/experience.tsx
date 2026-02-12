@@ -6,7 +6,9 @@ import { experiences } from "@/lib/data";
 export function Experience() {
   return (
     <Section id="experience" dark>
-      <SectionHeading>Experience</SectionHeading>
+      <SectionHeading>
+        Work <span className="text-foreground">Experience</span>
+      </SectionHeading>
 
       <div className="mt-10 md:grid md:grid-cols-[180px_1fr] md:gap-8">
         {/* Continuous timeline line on desktop — spans the right column */}

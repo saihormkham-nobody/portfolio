@@ -6,7 +6,9 @@ import { techStack } from "@/lib/data";
 export function TechStack() {
   return (
     <Section id="tech-stack" dark>
-      <SectionHeading>Tech Stack</SectionHeading>
+      <SectionHeading>
+        Tech <span className="text-foreground">Stack</span>
+      </SectionHeading>
 
       <div className="mt-10 space-y-8">
         {techStack.map((category) => (

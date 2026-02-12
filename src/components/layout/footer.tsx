@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail } from "lucide-react";
 import { SITE } from "@/lib/constants";
+import { SocialLinks } from "@/components/social-links";
+import { CopyEmail } from "@/components/copy-email";
 
 export function Footer() {
   return (
@@ -10,31 +11,8 @@ export function Footer() {
         </p>
 
         <div className="flex items-center gap-4">
-          <a
-            href={`mailto:${SITE.email}`}
-            className="text-muted transition-colors hover:text-primary"
-            aria-label="Email"
-          >
-            <Mail size={20} />
-          </a>
-          <a
-            href={SITE.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted transition-colors hover:text-primary"
-            aria-label="GitHub"
-          >
-            <Github size={20} />
-          </a>
-          <a
-            href={SITE.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted transition-colors hover:text-primary"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={20} />
-          </a>
+          <SocialLinks size={20} />
+          <CopyEmail />
         </div>
       </div>
     </footer>

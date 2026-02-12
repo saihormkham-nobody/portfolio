@@ -5,7 +5,7 @@
   --foreground: #ededed;
   --primary: #7ccad5;
   --accent: #42d18e;
-  --muted: #9ca3af;
+  --muted: #c5cdd6;
   --card: #2a3140;
   --border: #374151;
   --dark-section: #00000036;
@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
   font-family: "Source Sans 3 Variable", system-ui, sans-serif;
@@ -40,29 +41,13 @@ h2 {
   font-family: "Josefin Sans Variable", system-ui, sans-serif;
 }
 
-/* Scroll reveal animation */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.6s ease-out,
-    transform 0.6s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Hero fade-in */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(16px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 

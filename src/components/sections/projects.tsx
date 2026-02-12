@@ -5,7 +5,9 @@ import { Briefcase } from "lucide-react";
 export function Projects() {
   return (
     <Section id="projects">
-      <SectionHeading>Projects</SectionHeading>
+      <SectionHeading>
+        Notable <span className="text-foreground">Projects</span>
+      </SectionHeading>
 
       <div className="mt-10 flex flex-col items-center justify-center rounded-xl border border-dashed border-border py-16 text-center">
         <Briefcase size={40} className="text-muted" />

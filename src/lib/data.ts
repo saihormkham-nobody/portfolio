@@ -6,8 +6,8 @@ export const experiences: Experience[] = [
     role: "Full-Stack Developer",
     period: "Apr 2023 – Present",
     description: [
-      "Lead an internal development team building a multi-tenant compliance management SaaS platform, serving as the team's #1 contributor",
-      "Architect the Next.js frontend with TypeScript, implementing type-safe API contracts, Jotai state management, and React Query for server-state caching",
+      "Lead an internal development team building a multi-tenant compliance management SaaS platform, serving as the primary contributor",
+      "Architect the Next.js frontend and Laravel backend, implementing type-safe API contracts, Jotai state management, and React Query for server-state caching",
       "Integrate Azure OpenAI services for AI-powered compliance evaluation and automated finding generation",
       "Design and maintain CI/CD pipelines with GitHub Actions, Playwright E2E testing, and Docker-based deployments",
       "Implement internationalization supporting Japanese and English",
@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     role: "Web Developer",
     period: "Apr 2022 – Feb 2023",
     description: [
-      "Developed and maintained high-performance, SEO-optimized microsites for client businesses",
+      "Developed and maintained high-performance, SEO-optimized microsites for client businesses using React",
       "Researched and implemented cloud tooling and new web technologies for the team",
       "Managed WordPress and CMS-based sites for ongoing client projects",
     ],
@@ -83,7 +83,7 @@ export const education: Education[] = [
     institution: "University of the People (UoPeople)",
     degree: "B.S. Computer Science",
     period: "2023 – Expected 2026",
-    status: "~30 credits remaining",
+    status: "On track to graduate 2026",
   },
   {
     institution: "University of Computer Studies, Mandalay (UCSM)",
