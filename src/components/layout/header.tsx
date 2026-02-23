@@ -12,7 +12,7 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
         <a
-          href="#"
+          href="/"
           className="font-heading text-lg font-bold tracking-widest text-primary uppercase"
         >
           {SITE.name}
