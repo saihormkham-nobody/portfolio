@@ -7,7 +7,7 @@ const PROJECTS = [
   {
     title: "May Koe Koe",
     description:
-      "A personal portfolio with interactive cursor previews and voice acting demos. Built from scratch for my fiancée's online presence.",
+      "A personal space online with custom cursor previews, voice acting demos, and scroll animations. Built from scratch for my fiancée.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Jotai", "WaveSurfer.js"],
     href: "/projects/maykoekoe",
     live: "https://maykoekoe.com",
@@ -27,16 +27,21 @@ export function Projects() {
           <Link
             key={project.title}
             href={project.href}
-            className="group overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/50"
+            className="group overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(124,202,213,0.15)]"
           >
-            <Image
-              src={project.thumbnail}
-              alt={project.title}
-              width={400}
-              height={225}
-              unoptimized
-              className="w-full object-cover"
-            />
+            <div className="relative overflow-hidden">
+              {/* overlay */}
+              <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-t from-black/30 to-transparent opacity-30 transition-opacity duration-300 group-hover:opacity-100" />
+              <Image
+                src={project.thumbnail}
+                alt={project.title}
+                width={400}
+                height={225}
+                unoptimized
+                className="w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+
             <div className="p-5">
               <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
                 {project.title}
