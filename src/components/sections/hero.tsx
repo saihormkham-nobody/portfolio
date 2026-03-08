@@ -1,12 +1,16 @@
-import { MapPin } from "lucide-react";
+import { Download, MapPin } from "lucide-react";
 import { SITE } from "@/lib/constants";
 import { JapanMapPanel } from "@/components/japan-map-panel";
 import { CopyEmail } from "@/components/copy-email";
 import { SocialLinks } from "@/components/social-links";
+import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="flex w-full items-start px-6 pt-24 pb-6 md:px-8 md:pt-32 md:pb-20">
+    <section
+      id="hero"
+      className="flex w-full items-start px-6 pt-24 pb-6 md:px-8 md:pt-32 md:pb-20"
+    >
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 md:flex-row md:items-center md:justify-between">
         <div className="relative z-10 max-w-xl">
           <p className="animate-fade-in flex items-center gap-2 text-sm text-accent">
@@ -26,10 +30,20 @@ export function Hero() {
             <strong className="font-semibold text-primary">Laravel</strong> — currently exploring{" "}
             <strong className="font-semibold text-primary">Go</strong>.
           </p>
-          <div className="animate-fade-in-delay-3 mt-3 flex items-center gap-3">
+          <div className="animate-fade-in-delay-3 mt-3 mb-2 flex items-center gap-3">
             <SocialLinks />
             <CopyEmail />
           </div>
+          <Button
+            // variant="ghost"
+            size="sm"
+            href="/cv/SaiHormKham_WebDev.pdf"
+            download
+            className="animate-fade-in-delay-3 mt-3 gap-1.5"
+          >
+            <Download size={14} />
+            Download CV
+          </Button>
         </div>
 
         <JapanMapPanel />
