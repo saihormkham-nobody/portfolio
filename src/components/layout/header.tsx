@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { clsx } from "clsx";
 import { NAV_LINKS, SITE } from "@/lib/constants";
+import Link from "next/link";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -11,12 +12,12 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="font-heading text-lg font-bold tracking-widest text-primary uppercase"
         >
           {SITE.name}
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden gap-6 md:flex">

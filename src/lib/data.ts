@@ -1,9 +1,9 @@
-import type { Education, Experience, TechCategory } from "./types";
+import type { Education, Experience, Language, TechCategory } from "./types";
 
 export const experiences: Experience[] = [
   {
     company: "One Terrace",
-    role: "Full-Stack Developer",
+    role: "Full Stack Software Engineer",
     period: "Apr 2023 – Present",
     description: [
       "Lead an internal development team building a multi-tenant compliance management SaaS platform, serving as the primary contributor",
@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Digital Laboratory Myanmar",
-    role: "Web Developer",
+    role: "Full Stack Software Engineer",
     period: "Apr 2022 – Feb 2023",
     description: [
       "Developed and maintained high-performance, SEO-optimized microsites for client businesses using React",
@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
   },
   {
     company: "Bliss Stock",
-    role: "Web Developer",
+    role: "Intern / Developer",
     period: "Jul 2021 – Feb 2022",
     description: [
       "Built an e-learning platform using Java Spring Boot with Docker-based deployment",
@@ -82,17 +82,22 @@ export const education: Education[] = [
   {
     institution: "University of the People (UoPeople)",
     degree: "B.S. Computer Science",
-    period: "2023 – Expected 2026",
+    period: "2025 – Expected 2026",
     status: "On track to graduate 2026",
   },
   {
     institution: "University of Computer Studies, Mandalay (UCSM)",
     degree: "B.C.Sc. (Knowledge Engineering)",
-    period: "2015 – 2020",
+    period: "2015 – 2021",
     status: "Did not complete — university closed due to COVID-19 and political situation",
     achievements: [
       "2nd Runner Award, Myanmar Collegiate Programming Contest (MCPC) — 3 consecutive years",
       "Participant in Singapore Polytechnic extracurricular programs",
     ],
   },
+];
+
+export const languages: Language[] = [
+  { name: "English", level: "C2 Proficient (EF SET 75/100)" },
+  { name: "Japanese", level: "JLPT N3" },
 ];

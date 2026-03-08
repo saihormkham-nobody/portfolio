@@ -1,8 +1,8 @@
 // import Image from "next/image";
-import { GraduationCap, Trophy } from "lucide-react";
+import { GraduationCap, Languages, Trophy } from "lucide-react";
 import { Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { education } from "@/lib/data";
+import { education, languages } from "@/lib/data";
 
 export function About() {
   return (
@@ -31,7 +31,7 @@ export function About() {
           </p>
         </div>
 
-        {/* Education */}
+        {/* Education & Languages */}
         <div className="space-y-8">
           {education.map((edu) => (
             <div key={edu.institution}>
@@ -57,6 +57,21 @@ export function About() {
               </div>
             </div>
           ))}
+
+          <div className="flex items-start gap-4">
+            <Languages size={24} className="mt-1 shrink-0 text-primary" />
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">Languages</h3>
+              <ul className="mt-2 space-y-1">
+                {languages.map((lang) => (
+                  <li key={lang.name} className="text-sm text-foreground">
+                    <span className="text-primary">{lang.name}</span>{" "}
+                    <span className="text-muted">— {lang.level}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

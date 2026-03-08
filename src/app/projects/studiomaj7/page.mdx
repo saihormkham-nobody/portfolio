@@ -1,0 +1,61 @@
+export const metadata = {
+  title: "StudioMaj7 — Case Study",
+  description:
+    "A full-stack chord library and lyrics platform for Myanmar guitarists. Built with Next.js, Go, React Native, TypeSense, and SQLite.",
+};
+
+# StudioMaj7
+
+**Role:** Solo Development, Team Content · **Live:** [studiomaj7.com](https://studiomaj7.com) · [Play Store](https://play.google.com/store/apps/details?id=com.studiomaj7.app)
+
+`Next.js` `React Native` `Go` `SQLite` `TypeSense` `Firebase` `AWS EC2` `S3` `CloudFront` `Cloudflare`
+
+## What & Why
+
+StudioMaj7 is a chord library for Myanmar guitarists. You search for a song, you get the lyrics with chords on top. A content team adds new songs every week through an admin dashboard built with Next.js and Go.
+
+I built it to run fast on a cheap server and stay maintainable by one person. Every technical decision came from that constraint. The app hit 5K+ Play Store downloads and ~3.9K monthly active users on the web within six months.
+
+## Three Clients, One API
+
+Three frontends, one Go backend:
+
+- **[Mobile app](https://play.google.com/store/apps/details?id=com.studiomaj7.app)** — React Native, the main product
+- **[Website](https://studiomaj7.com)** — Next.js, statically generated for SEO and to reduce API workload
+- **Admin dashboard** — Next.js, where the content team manages songs and editor's picks
+
+![Admin dashboard — Reports page](/case-studies/studiomaj7/admin.webp)
+
+## Why Go
+
+I started with Next.js server actions. It felt slow and the server costs were high. So I rewrote the backend in Go — faster responses, lower memory footprint, and one binary to deploy. The whole API runs on a single EC2 instance and handles everything.
+
+## Search in Myanmar Script
+
+I started with SQLite FTS5 for search. It worked on Android but broke on iOS — the two keyboards encode Myanmar text differently, so the same query returned different results depending on the device. FTS5 could not handle that.
+
+TypeSense fixed it. It is open source, handles fuzzy matching well, and tolerates the encoding differences between platforms. Search just works now — same results on iOS, Android, and web.
+
+## SQLite in Production
+
+I just use SQLite with WAL mode. It is faster for reads, needs almost no maintenance, and fits a single-server setup perfectly. The whole database is one file. A cron job backs it up to S3 periodically.
+
+## Infrastructure
+
+Everything runs on a self-managed Ubuntu EC2 instance. S3 and CloudFront page serve static assets. Cloudflare handles DNS and basic security. No containers, no orchestration — just a Go binary and systemd.
+
+![Infrastructure diagram](/case-studies/studiomaj7/infra.webp)
+
+## Organic Growth
+
+The website is statically generated, so every song page is pre-built HTML. Google indexes it well. Over the past year, the site pulled 68.1K clicks from 2.03M impressions — all organic, no ads. Most traffic comes from Myanmar, with Thailand second.
+
+![Google Search Console insights](/case-studies/studiomaj7/gsc.webp)
+
+## Interesting Problems
+
+**CloudFront slower than direct EC2** — I tried putting CloudFront in front of the API for caching. Accessing the EC2 instance directly turned out to be faster. The CDN added latency instead of removing it. Static assets still go through CloudFront, but the API does not.
+
+**Scaling as a solo developer** — The biggest constraint was not the server. It was me. I started with Flutter but ditched it for React Native — sharing TypeScript across the web and mobile codebases meant less context switching and less code to maintain alone. The web uses SSG so it costs almost nothing to serve. Go keeps the backend simple. Every piece was chosen so one person could keep it running.
+
+**iOS vs Android keyboard encoding** — The two platforms encode Myanmar script differently at the keyboard level. The same character can produce different byte sequences. This broke SQLite FTS5 entirely — TypeSense's typo tolerance handled the differences without any special configuration.

@@ -1,0 +1,45 @@
+export const metadata = {
+  title: "May Koe Koe — Case Study",
+  description:
+    "A personal website with interactive cursor previews, voice acting demos, and scroll animations. Built with Next.js, Framer Motion, and Jotai.",
+};
+
+# May Koe Koe
+
+**Role:** Design & Development (Solo) · **Live:** [maykoekoe.com](https://maykoekoe.com)
+
+`Next.js` `TypeScript` `Tailwind CSS` `Framer Motion` `Jotai` `WaveSurfer.js` `Headless UI` `Vercel`
+
+## What & Why
+
+Do you remember the years around 2000? Back then, everyone had a website. This project is the same thing. It is a personal website that I built from the start for my fiancée. It is not a portfolio of work. Instead, it shows who she is. I added some parts that people can interact with to make it feel like her style.
+
+Also, another artist has a name that is like hers. Because of this, I had to make sure the website appears near the top of search results.
+
+## Interactive Cursor
+
+Hovering over social links or section titles expands the cursor into a preview window showing a relevant image or looping video. Any component can control the cursor via a Jotai atom — no prop drilling needed.
+
+<video src="/case-studies/maykoekoe/interactive-720p.mp4" autoPlay loop muted playsInline />
+
+## SEO
+
+There's an artist with a similar name, so ranking was important. The site is server-rendered with proper meta tags, sitemap generation, and semantic HTML. Searching "May Koe Koe" now shows the portfolio at the top.
+
+![Search results for May Koe Koe](/case-studies/maykoekoe/seo.webp)
+
+## Audio Waveform Player
+
+She does voice acting as a hobby, so the site needed to let visitors actually hear her demos. Integrated WaveSurfer.js for real waveform visualization with three playable demo tracks.
+
+
+## Scroll Animations & 3D Tilt
+
+Sections reveal with staggered Framer Motion transitions as you scroll. Photos respond to mouse movement with a subtle parallax tilt, and hobby images transition from grayscale to color on hover.
+
+
+## Interesting Problems
+
+**Cursor clipping at edges** — The preview would overflow the viewport near screen edges. Added boundary detection that flips direction, and halves video size on small screens.
+
+**WaveSurfer + SSR** — Canvas rendering broke React hydration. Fixed with dynamic import (`ssr: false`) and a client-side mount guard.

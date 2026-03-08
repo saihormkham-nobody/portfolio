@@ -9,6 +9,7 @@ interface ButtonProps extends ComponentProps<"button"> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   href?: string;
+  download?: boolean | string;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -28,17 +29,26 @@ export function Button({
   variant = "primary",
   size = "md",
   href,
+  download,
   className,
   children,
   ...props
 }: ButtonProps) {
   const classes = clsx(
-    "inline-flex items-center justify-center rounded-full transition-all duration-200 cursor-pointer",
+    "inline-flex items-center justify-center rounded-md transition-all duration-200 cursor-pointer",
     "active:scale-[0.98]",
     variantStyles[variant],
     sizeStyles[size],
     className,
   );
+
+  if (href && download !== undefined) {
+    return (
+      <a href={href} download={download} className={classes}>
+        {children}
+      </a>
+    );
+  }
 
   if (href) {
     return (

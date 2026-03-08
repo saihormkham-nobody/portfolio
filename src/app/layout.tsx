@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@fontsource-variable/josefin-sans";
 import "@fontsource-variable/source-sans-3";
 import { Geist_Mono } from "next/font/google";
+import { ScrollToTop } from "@/components/scroll-to-top";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -42,7 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistMono.variable} antialiased`}>
+        <ScrollToTop />
+        {children}
+      </body>
     </html>
   );
 }
