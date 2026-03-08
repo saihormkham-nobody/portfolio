@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Sai Horm Kham",
-  title: "Full-Stack Developer",
+  title: "Full Stack Software Engineer",
   email: "saihormkham@proton.me",
   github: "https://github.com/saihormkham-nobody",
   linkedin: "https://www.linkedin.com/in/sai-horm-kham/",
@@ -8,7 +8,7 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/#hero" },
   { label: "Experience", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
   { label: "Tech Stack", href: "/#tech-stack" },
