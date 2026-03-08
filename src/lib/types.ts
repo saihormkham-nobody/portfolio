@@ -23,6 +23,11 @@ export interface Education {
   achievements?: string[];
 }
 
+export interface Language {
+  name: string;
+  level: string;
+}
+
 export interface NavLink {
   label: string;
   href: string;

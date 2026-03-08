@@ -96,3 +96,8 @@ export const education: Education[] = [
     ],
   },
 ];
+
+export const languages: Language[] = [
+  { name: "English", level: "C2 Proficient (EF SET 75/100)" },
+  { name: "Japanese", level: "JLPT N3" },
+];
