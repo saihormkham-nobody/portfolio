@@ -5,6 +5,15 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const PROJECTS = [
   {
+    title: "StudioMaj7",
+    description:
+      "A full-stack chord library and lyrics platform for Myanmar guitarists. 5K+ downloads, ~3.9K monthly active users. Solo development.",
+    tech: ["Next.js", "React Native", "Go", "SQLite", "TypeSense", "Firebase", "AWS"],
+    href: "/projects/studiomaj7",
+    live: "https://studiomaj7.com",
+    thumbnail: "/case-studies/studiomaj7/thumbnail.webp",
+  },
+  {
     title: "May Koe Koe",
     description:
       "A personal space online with custom cursor previews, voice acting demos, and scroll animations. Built from scratch for my fiancée.",
@@ -38,7 +47,7 @@ export function Projects() {
                 width={400}
                 height={225}
                 unoptimized
-                className="w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
             </div>
 
