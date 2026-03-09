@@ -35,7 +35,7 @@ export function JapanMapPanel() {
   return (
     <div
       ref={containerRef}
-      className="animate-fade-in-delay-2 relative mx-auto flex h-68 w-full max-w-80 shrink-0 items-center justify-center overflow-visible md:h-96 md:w-[400px] md:max-w-full lg:h-full lg:w-[480px]"
+      className="animate-fade-in-delay-2 relative mx-auto flex h-68 w-full max-w-80 shrink-0 items-center justify-center overflow-hidden md:h-96 md:w-[400px] md:max-w-full lg:h-full lg:w-[480px] lg:overflow-visible"
     >
       <JapanSvg
         className="w-full"
