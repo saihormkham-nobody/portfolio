@@ -5,6 +5,7 @@ export const SITE = {
   email: "saihormkham@proton.me",
   github: "https://github.com/saihormkham-nobody",
   linkedin: "https://www.linkedin.com/in/sai-horm-kham/",
+  formEndpoint: "", // TODO: set up Cloudflare Worker for contact form
 } as const;
 
 export const NAV_LINKS = [
